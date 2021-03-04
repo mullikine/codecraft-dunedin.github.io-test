@@ -6,7 +6,7 @@
     <description>Recent content in Posts on CodeCraft Dunedin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://codecraft.org.nz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Nov 2020 00:00:00 +1300</lastBuildDate><atom:link href="https://codecraft.org.nz/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrate to Hugo from Jekyll</title>
       <link>https://codecraft.org.nz/posts/migrate-from-jekyll/</link>
@@ -16,6 +16,15 @@
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
 ▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+    <item>
+      <title>Modern Embedded Debugging Show-and-tell</title>
+      <link>https://codecraft.org.nz/posts/2020-11-03-rust-embedded-debugging/</link>
+      <pubDate>Tue, 03 Nov 2020 00:00:00 +1300</pubDate>
+      
+      <guid>https://codecraft.org.nz/posts/2020-11-03-rust-embedded-debugging/</guid>
+      <description>Tools and techniques for debugging embedded systems are like anything else: a compromise between competing goals. Historically, they have been some combination of proprietary (usually expensive) and hacky, and generally lag behind those for regular computers. Debuggers are usually relatively slow, which can mean they aren&amp;rsquo;t usable for debugging in the real-time environments that embedded systems are often used in; rather than a debug_printf(&amp;quot;got here\n&amp;quot;);, it might only be practical to insert a turn_on_led(); in a suspect piece of code.</description>
     </item>
     
     <item>

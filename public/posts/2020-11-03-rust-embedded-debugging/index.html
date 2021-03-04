@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="CodeCraft" />
-  <meta property="og:url" content="https://codecraft.org.nz/posts/" />
-  <link rel="canonical" href="https://codecraft.org.nz/posts/" /><link rel="alternate" type="application/atom+xml" href="https://codecraft.org.nz/index.xml" title="CodeCraft Dunedin">
+  <meta property="og:url" content="https://codecraft.org.nz/posts/2020-11-03-rust-embedded-debugging/" />
+  <link rel="canonical" href="https://codecraft.org.nz/posts/2020-11-03-rust-embedded-debugging/" /><link rel="alternate" type="application/atom+xml" href="https://codecraft.org.nz/index.xml" title="CodeCraft Dunedin">
 
   <script type="application/ld+json">
   {
@@ -19,9 +19,9 @@
            "@id": "https:\/\/codecraft.org.nz\/"
       },
       "articleSection" : "posts",
-      "name" : "Posts",
-      "headline" : "Posts",
-      "description" : "",
+      "name" : "Modern Embedded Debugging Show-and-tell",
+      "headline" : "Modern Embedded Debugging Show-and-tell",
+      "description" : "Tools and techniques for debugging embedded systems are like anything else: a compromise between competing goals. Historically, they have been some combination of proprietary (usually expensive) and hacky, and generally lag behind those for regular computers. Debuggers are usually relatively slow, which can mean they aren\u0026rsquo;t usable for debugging in the real-time environments that embedded systems are often used in; rather than a debug_printf(\u0026quot;got here\\n\u0026quot;);, it might only be practical to insert a turn_on_led(); in a suspect piece of code.",
       "inLanguage" : "en-US",
       "author" : "CodeCraft",
       "creator" : "CodeCraft",
@@ -31,15 +31,15 @@
       "copyrightYear" : "2020",
       "datePublished": "2020-11-03 00:00:00 \u002b1300 NZDT",
       "dateModified" : "2020-11-03 00:00:00 \u002b1300 NZDT",
-      "url" : "https:\/\/codecraft.org.nz\/posts\/",
+      "url" : "https:\/\/codecraft.org.nz\/posts\/2020-11-03-rust-embedded-debugging\/",
       "keywords" : [  ]
   }
 </script>
-<title>Posts</title>
-  <meta property="og:title" content="Posts" />
+<title>Modern Embedded Debugging Show-and-tell</title>
+  <meta property="og:title" content="Modern Embedded Debugging Show-and-tell" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+  <meta property="og:description" content="Tools and techniques for debugging embedded systems are like anything else: a compromise between competing goals. Historically, they have been some combination of proprietary (usually expensive) and hacky, and generally lag behind those for regular computers. Debuggers are usually relatively slow, which can mean they aren&amp;rsquo;t usable for debugging in the real-time environments that embedded systems are often used in; rather than a debug_printf(&amp;quot;got here\n&amp;quot;);, it might only be practical to insert a turn_on_led(); in a suspect piece of code." />
+  <meta name="description" content="Tools and techniques for debugging embedded systems are like anything else: a compromise between competing goals. Historically, they have been some combination of proprietary (usually expensive) and hacky, and generally lag behind those for regular computers. Debuggers are usually relatively slow, which can mean they aren&amp;rsquo;t usable for debugging in the real-time environments that embedded systems are often used in; rather than a debug_printf(&amp;quot;got here\n&amp;quot;);, it might only be practical to insert a turn_on_led(); in a suspect piece of code." />
   <meta property="og:locale" content="en-us" />
 
   
@@ -65,10 +65,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post English" id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/" >
@@ -94,73 +95,137 @@
 </div>
 <div class="header-line"></div>
 
-
-        <h1 class="taxonomy-term"></h1>
-        <div id="posts-list">
-          <section>
-            <h1 class="site-date-catalog">2020</h1>
-
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2020-11-03 00:00:00 NZDT">Nov 03</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/2020-11-03-rust-embedded-debugging/">Modern Embedded Debugging Show-and-tell</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-          <section>
-            <h1 class="site-date-catalog">2014</h1>
-
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2014-04-02 00:00:00 UTC">Apr 02</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/hugoisforlovers/">Getting Started with Hugo</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2014-04-02 00:00:00 UTC">Apr 02</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/goisforlovers/">(Hu)go Template Primer</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2014-03-10 00:00:00 UTC">Mar 10</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">Modern Embedded Debugging Show-and-tell</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2020-11-03 00:00:00 NZDT">
+                03 Nov 2020
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+              <div class="post-author">
+                <a target="_blank" href="https://codecraft.org.nz/">@CodeCraft</a>
+              </div>
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>Tools and techniques for debugging embedded systems are like anything
+else: a compromise between competing goals. Historically, they have been
+some combination of proprietary (usually expensive) and hacky, and
+generally lag behind those for regular computers. Debuggers are usually
+relatively slow, which can mean they aren&rsquo;t usable for debugging in the
+real-time environments that embedded systems are often used in; rather
+than a <code>debug_printf(&quot;got here\n&quot;);</code>, it might only be practical to
+insert a <code>turn_on_led();</code> in a suspect piece of code. If a debug setup
+isn&rsquo;t slow and/or expensive, it has usually been costly in system
+resources such as program space or hardware in the target.</p>
+<p>This &ldquo;talk&rdquo; was a rambly and disorganised tour through some new tooling
+for working on embedded systems, which can reduce each of those
+shortcomings. Demos used firmware written in Rust targeting a
+microcontroller with an ARM M0+ core, but the Rust-based tooling is a
+bit more widely applicable so may find use in other contexts. The fancy
+new stuff is open source, mainly developed by the
+<a href="https://github.com/knurling-rs">knurling-rs</a> project. Some aspects of
+it are a bit rough around the edges still, but progress is fast and the
+community is welcoming to newcomers and pull requests.</p>
+<p>Starting from the top, the demonstrated debug stack uses:</p>
+<p><a href="https://doc.rust-lang.org/cargo/">Cargo</a> to coordinate everything, replacing a role that was often filled by either <a href="https://www.gnu.org/software/make/">make</a> or a proprietary IDE (which in some instances wrap make). A simple <code>cargo run</code> might:</p>
+<ol>
+<li>Build the firmware executable</li>
+<li>Convert the executable from elf to a target-device-specific binary format</li>
+<li>Connect to the target processor through the hardware debugger</li>
+<li>Load the binary in to the target&rsquo;s flash memory</li>
+<li>Open a console for debug output</li>
+<li>Start the program on the target processor.</li>
+</ol>
+<p><a href="https://ferrous-systems.com/blog/defmt/">defmt</a> moves formatting of
+the debug messages from the target to the host. As an example: a call
+like <code>defmt::info!(&quot;Would send {:u32}&quot;, sample);</code>, by default produces a
+similar end result to an equivalent <code>printf()</code>, but:</p>
+<ul>
+<li>Reduces flash memory usage on the target. The code involved in turning the
+u32 (unsigned 32-bit integer) in to a string is no longer needed. Also, the
+string literal <code>&quot;Would send {:u32}&quot;</code> is stripped out of the firmware binary
+and replaced with an integer.</li>
+<li>Reduces the target processor time required to send the debug message. Mainly,
+this saving comes from the relatively-expensive formatting of the u32 in to a
+string. Also, only a few bytes (4? for the formatting string, and 4 for the
+u32) need to be moved in to the debug output queue, versus the formatting
+string and u32 in to the formatting code, and the result of formatting going
+out to the debug queue.</li>
+<li>Frees up bandwidth in the debug transport layer, only a couple integers are
+moved across it rather than the formatted message.  This is helpful for two
+reasons: it allows for more detailed logging, and the target processor might
+be interrupted less depending on the debug transport scheme.</li>
+<li>Fancy logging on the host side gets a lot easier. Rather than dumping an
+integer in to a console, perhaps the host side uses the integer value to
+update a graph, log to a binary file, generate some sound, etc.</li>
+</ul>
+<p><a href="https://github.com/knurling-rs/probe-%20run">probe-run</a>, used here as a cargo runner,
+it uses <a href="https://github.com/probe-rs/probe-%20rs">probe-rs</a> to interface with the
+underlying debug hardware. probe-rs replaces
+<a href="http://openocd.org/">OpenOCD</a> in the open-
+source world, or proprietary tooling.</p>
+<p><a href="https://wiki.segger.com/RTT">RTT</a> is the
+technology used to transfer the debug
+information between the host and target over [
+[<a href="https://en.wikipedia.org/wiki/JTAG#Similar%5Fin">https://en.wikipedia.org/wiki/JTAG#Similar%5Fin</a>
+terface_standards][SWD]]; this uses the same
+hardware on the target as for flashing it, so
+no additional pins or peripherals need to be
+allocated to debugging. RTT was developed
+commercially, but with the protocol made
+publicly available, it has become a defacto
+standard.</p>
+<p>In the demo, I used an ST-Link v2.1 as the
+debug probe, connected via SWD to a
+<a href="https://www.adafruit.com/feather">Feather</a>
+(specifically one the &ldquo;M0&rdquo; series) with an
+ATSAMD21G18AU microcontroller. The ST-Link
+came from an inexpensive ST Nucleo development
+board, but there are several SWD capable debug
+probes which are compatible with probe-rs.
+Both these are available from Digi-Key for
+instance - a Nucleo is digikey p/n
+<a href="https://www.digikey.co.nz/product-detail/en/%20stmicroelectronics/NUCLEO-F072RB/497-15096-ND/%205047984">497-15096-ND</a> and a Feather is
+<a href="https://www.digikey.co.nz/product-%20detail/en/adafruit-industries-%20llc/2772/1528-1531-ND/5775537">1528-1531-ND</a>
+(however there are less expensive options with
+equivalent microcontrollers).</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -180,6 +245,8 @@
     
   
 </script>
+
+  
 
 </body>
 
