@@ -1,0 +1,65 @@
+baseURL = "https://codecraft.org.nz//"
+languageCode = "en-us"
+title = "CodeCraft Dunedin"
+enableGitInfo = true
+enableRobotsTXT = true
+paginate = 5
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+theme = "hugo-geekblog"
+timeout = 180000
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.tableOfContents]
+endLevel = 9
+startLevel = 1
+
+[mediaTypes]
+[mediaTypes."application/atom+xml"]
+suffixes = ["xml"]
+
+[outputFormats]
+[outputFormats.Atom]
+baseName = "feed"
+isHTML = false
+isPlainText = false
+mediaType = "application/atom+xml"
+name = "Atom"
+noUgly = true
+permalinkable = false
+rel = "alternate"
+
+[outputFormats.Json]
+baseName = "feed"
+isHTML = false
+isPlainText = false
+mediaType = "application/json"
+name = "Json"
+noUgly = true
+permalinkable = false
+rel = "alternate"
+
+[outputs]
+home = ["HTML", "ATOM", "JSON"]
+page = ["HTML"]
+section = ["HTML"]
+taxonomy = ["HTML"]
+term = ["HTML", "ATOM", "JSON"]
+
+[params]
+description = "hugo-geekblog is a simple Hugo theme for personal blogs. This page is theme documentation and powered by the latest version of hugo-geekblog itself.\n"
+geekblogAuthor = "john-doe"
+geekblogImageLazyLoading = true
+geekblogLegalNotice = "https://thegeeklab.de/legal-notice/#contact-information"
+geekblogPrivacyPolicy = "https://thegeeklab.de/legal-notice/#privacy-policy"
+geekblogToC = 3
+images = ["favicon/android-chrome-512x512.png"]
+subtitle = "Subtitle to describe your blog"
+
+[taxonomies]
+author = "authors"
+tag = "tags"
