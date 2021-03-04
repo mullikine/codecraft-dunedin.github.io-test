@@ -2,7 +2,7 @@
 #+OPTIONS: toc:nil
 
 #+HUGO_BASE_DIR: /home/shane/var/smulliga/source/git/mullikine/codecraft-dunedin.github.io
-#+HUGO_SECTION: ./en/pages
+#+HUGO_SECTION: ./en/_
 
 #+TITLE: About CodeCraft Dunedin
 #+DATE: <2021-03-04>
