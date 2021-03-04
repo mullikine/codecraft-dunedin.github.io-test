@@ -2,7 +2,7 @@
 #+OPTIONS: toc:nil
 
 #+HUGO_BASE_DIR: /home/shane/var/smulliga/source/git/mullikine/codecraft-dunedin.github.io
-#+HUGO_SECTION: ./posts
+#+HUGO_SECTION: ./en/posts
 
 #+TITLE: Modern Embedded Debugging Show-and-tell
 #+DATE: <2020-11-03>
