@@ -22,6 +22,8 @@ homepage = "https://codecraft.org.nz/"
 
 [params]
 # disqus = "joway" # disqus account name
+twitter = "CodeDunedin"
+github = "codecraft-dunedin"
 extraHead = ''
 mainSections = ["posts"]
 
