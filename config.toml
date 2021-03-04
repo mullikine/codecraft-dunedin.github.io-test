@@ -45,11 +45,11 @@ permalinkable = false
 rel = "alternate"
 
 [outputs]
-home = ["HTML", "ATOM", "JSON"]
-page = ["HTML"]
-section = ["HTML"]
-taxonomy = ["HTML"]
-term = ["HTML", "ATOM", "JSON"]
+# home = ["HTML", "ATOM", "JSON"]
+# page = ["HTML"]
+# section = ["HTML"]
+# taxonomy = ["HTML"]
+# term = ["HTML", "ATOM", "JSON"]
 
 [params]
 description = "hugo-geekblog is a simple Hugo theme for personal blogs. This page is theme documentation and powered by the latest version of hugo-geekblog itself.\n"
