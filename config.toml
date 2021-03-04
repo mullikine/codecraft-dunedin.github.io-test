@@ -25,12 +25,28 @@ homepage = "https://codecraft.org.nz/"
 twitter = "CodeDunedin"
 github = "codecraft-dunedin"
 extraHead = ''
-mainSections = ["posts"]
+mainSections = ["posts", "_"]
+
+[[params.mainpages]]
+name = "About"
+link = "/_/about/"
+
+[[params.mainpages]]
+name = "Contributors"
+link = "/_/contributors/"
 
 [[params.socials]]
 name = "RSS"
 link = "/index.xml"
 
 [[params.socials]]
-name = "About"
-link = "https://codecraft.org.nz/"
+name = "GitHub"
+link = "https://github.com/codecraft-dunedin/"
+
+[[params.socials]]
+name = "Twitter"
+link = "https://twitter.com/CodeDunedin"
+
+[[params.socials]]
+name = "info@codecraft.org.nz"
+link = "mailto:info@codecraft.org.nz"
