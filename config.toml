@@ -6,6 +6,7 @@ enableRobotsTXT = true
 paginate = 5
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+
 theme = "hugo-geekblog"
 timeout = 180000
 
